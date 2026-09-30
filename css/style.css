@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header e Navegação */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header-top h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-top p {
+    font-size: 1.1em;
+    opacity: 0.95;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Container Principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+/* Seção Hero */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Seção de Produtos */
+.products-container {
+    margin-bottom: 50px;
+}
+
+.products-container h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #667eea;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    border-color: #667eea;
+}
+
+.product-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.product:hover .product-image {
+    transform: scale(1.05);
+}
+
+/* IDs das Imagens - Placeholders com Cores */
+#img-1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+#img-2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+#img-3 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+#img-4 {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+#img-5 {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+#img-6 {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.product h3 {
+    font-size: 1.3em;
+    color: #667eea;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.description {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #f5576c;
+    display: block;
+    margin: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Seção Sobre */
+.about {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.2em;
+    color: #667eea;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.footer-section h4 {
+    color: #667eea;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #667eea;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #999;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-top h1 {
+        font-size: 1.8em;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .navbar {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .product {
+        padding: 15px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .about {
+        padding: 30px 20px;
+    }
+
+    .products-container h2,
+    .about h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-top h1 {
+        font-size: 1.5em;
+    }
+
+    .header-top p {
+        font-size: 0.95em;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .product h3 {
+        font-size: 1.1em;
+    }
+
+    .price {
+        font-size: 1.3em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .footer-content {
+        gap: 20px;
+    }
+}
